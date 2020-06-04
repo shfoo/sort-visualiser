@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Sort visualiser</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+
+    <body>
+        <h1>sort visualiser</h1>
+        <canvas width='1000' height='600'></canvas>
+
+        <h2 class='init_array'><u>Initialise array</u></h2>
+        <div class='init-btn-group'>
+            <button class='button' onclick='A.initValues(0);'>Random</button>
+            <button class='button' onclick='A.initValues(1);'>Reverse sorted</button>
+        </div>
+
+        <h2 class='sort_algo'><u>Sorting algorithm</u></h2>
+        <div class='algo-btn-group'>
+            <button class='button' onclick='A.sortAlgo(0);'>Selection sort</button>
+            <button class='button' onclick='A.sortAlgo(1);'>Bubble sort</button>
+            <button class='button' onclick='A.sortAlgo(2);'>Insertion sort</button>
+            <button class='button' onClick='A.sortAlgo(3);'>Merge sort</button>
+            <button class='button' onClick='A.sortAlgo(4);'>Quicksort</button>
+            <button class='button' onClick='A.sortAlgo(5);'>Randomised Quicksort</button>
+        </div>
+
+        <button class='sort-btn' onclick='A.sort()'>Sort!</button>
+
+        <script src='main.js'></script>
+
+    </body>
+</html>
